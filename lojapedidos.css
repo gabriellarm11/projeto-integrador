@@ -1,0 +1,197 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f4f7;
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* ========== CABEÇALHO ========== */
+  header {
+    background: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .brand {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .coins {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff8e6;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .coins img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* ========== FILTROS ========== */
+  .filters {
+    padding: 14px 20px;
+    background: #fefefe;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e3e7ec;
+  }
+
+  .filters button {
+    background: #ffffff;
+    border: 1px solid #cfd6de;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .filters button:hover {
+    background: #f3f6fa;
+  }
+
+  /* ========== LISTA DE CARDS ========== */
+  main {
+    flex: 1 0 auto;
+    padding: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+
+  .badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #10b981; /* verde */
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .card small {
+    color: #6b7280;
+    font-size: 0.8rem;
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: #374151;
+  }
+
+  .meta svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+  }
+
+  .progress {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 6px 0 2px;
+  }
+
+  .progress span {
+    display: block;
+    height: 100%;
+    background: #4f46e5; /* roxo */
+    width: 25%; /* apenas exemplo */
+  }
+
+  .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .unlock-btn {
+    background: #22c55e;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .unlock-btn:hover {
+    background: #16a34a;
+  }
+
+  /* ========== RODAPÉ (NAV) ========== */
+  footer {
+    background: #ffffff;
+    padding: 8px 0;
+    border-top: 1px solid #e3e7ec;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+
+  nav a.active {
+    color: #4f46e5;
+  }
+
+  nav svg {
+    width: 20px;
+    height: 20px;
+  }
