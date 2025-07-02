@@ -4,34 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Loja de Pedidos</title>
-  <link rel="stylesheet" href="lojapedidos.css" />
+  <link rel="stylesheet" href="aceitos.css" />
 </head>
 <body>
-  <!-- ===== CABEÇALHO ===== -->
+  <!--  CABEÇALHO  -->
   <header>
     <h1>Loja de Pedidos</h1>
   </header>
 
-  <!-- ===== BOTÕES DE FILTRO / ORDENAR ===== -->
-  <section class="filters">
-    <button onclick="filtrarUrgentes()">Filtrar urgentes</button>
-    <button onclick="mostrarTodos()">Mostrar todos</button>
-   
-  </section>
+ 
+  
 
-  <!-- ===== LISTA DE CARDS ===== -->
+  <!-- LISTA DE CARDS  -->
   <main>
     <div class="cards" >
       <!-- Card 1 (URGENTE) -->
       <div class="card ">
-        <span class="badge">Pedido novo</span>
+        <span class="badge">aceitos</span>
         <h3>Bem-Estar • Personal Trainer</h3>
-        <small>Fernanda H.</small>
+        <small>Vitoria S.</small>
 
         <div class="meta">
           <!-- Ícone localização -->
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Serviço Online</span>
+          <span>Serviço presencial</span>
         </div>
 
         <div class="meta">
@@ -44,30 +40,30 @@
 
         <div class="card-footer">
           <small>1 / 4</small>
-          <button class="unlock-btn">Liberar • 294</button>
+          <button class="unlock-btn">ver mais</button>
         </div>
       </div>
 
       <!-- Card 2 (NÃO urgente) -->
       <div class="card">
-        <span class="badge" style="background:#14b8a6;">Pedido novo</span>
+        <span class="badge" style="background:#14b8a6;">aceito</span>
         <h3>Bem-Estar • Personal Trainer</h3>
-        <small>Diego G.</small>
+        <small>João V.</small>
         <div class="meta">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Serviço Online</span>
+          <span>Serviço prsencial</span>
         </div>
         <div class="progress"><span style="width: 0%"></span></div>
         <div class="card-footer">
           <small>0 / 4</small>
-          <button class="unlock-btn">Liberar • 294</button>
+          <button class="unlock-btn">ver mais</button>
         </div>
       </div>
 
       <!-- Card 3 (URGENTE) -->
       <div class="card  urgente-card">
-        <span class="badge" style="background:#ef4444;">Urgente</span>
-        <h3>Bem-Estar • Personal Trainer</h3>
+        <span class="badge" style="background:#14b8a6;">aceito</span>
+        <h3> casa • eletricista</h3>
         <small>Agnes L.</small>
         <div class="meta">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -76,30 +72,30 @@
         <div class="progress"><span style="width: 50%"></span></div>
         <div class="card-footer">
           <small>2 / 4</small>
-          <button class="unlock-btn">Liberar • 294</button>
+          <button class="unlock-btn">ver mais</button>
         </div>
       </div>
 
       <!-- Card 4 (NÃO urgente) -->
       <div class="card" >
-        <span class="badge" style="background:#14b8a6;">Pedido novo</span>
-        <h3>Bem-Estar • Personal Trainer</h3>
+        <span class="badge" style="background:#14b8a6;">aceito</span>
+        <h3>apartamento • encanadora</h3>
         <small>Sofia S.</small>
         <div class="meta">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Serviço Online</span>
+          <span>Serviço presencial</span>
         </div>
         <div class="progress"><span style="width: 0%"></span></div>
         <div class="card-footer">
           <small>0 / 4</small>
-          <button class="unlock-btn">Liberar • 294</button>
+          <button class="unlock-btn">ver mais</button>
         </div>
       </div>
 
         <!-- Card 5(urgente) -->
     <div class="card urgente-card " >
-      <span class="badge" style="background:#ef4444;">Urgente</span>
-      <h3>Casa • Encanador</h3>
+      <span class="badge" style="background:#14b8a6;">aceito</span>
+      <h3>Casa • Encanadora</h3>
       <small>João M.</small>
       <div class="meta">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -111,33 +107,16 @@
       <div class="progress"><span style="width: 75%"></span></div>
       <div class="card-footer">
         <small>3 / 4</small>
-        <button class="unlock-btn"> Liberar • 310</button>
+        <button class="unlock-btn"> ver mais </button>
       </div>
     </div>
 
 
-    <!-- Card 6 (NÃO urgente) -->
-    <div class="card">
-      <span class="badge" style="background:#14b8a6;">Pedido novo</span>
-      <h3>Eventos • Buffet</h3>
-      <small>Ana C.</small>
-      <div class="meta">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/>
-          <circle cx="12" cy="10" r="3"/>
-        </svg>
-        <span>Presencial</span>
-      </div>
-      <div class="progress"><span style="width: 20%"></span></div>
-      <div class="card-footer">
-        <small>1 / 5</small>
-        <button class="unlock-btn">Liberar • 310</button>
-      </div>
-    </div>
+ 
 
      <!-- Card 7 (NÃO urgente) -->
      <div class="card">
-      <span class="badge" style="background:#14b8a6;">Pedido novo</span>
+      <span class="badge" style="background:#14b8a6;">aceito</span>
       <h3>Tecnologia • Suporte TI</h3>
       <small>Lucas V.</small>
       <div class="meta">
@@ -150,11 +129,28 @@
       <div class="progress"><span style="width: 10%"></span></div>
       <div class="card-footer">
         <small>1 / 10</small>
-        <button class="unlock-btn">Liberar • 180</button>
+        <button class="unlock-btn">ver mais</button>
       </div>
     </div>
 
-
+     <!-- Card 7 (NÃO urgente) -->
+     <div class="card">
+        <span class="badge" style="background:#14b8a6;">aceito</span>
+        <h3> cuidadora  • baby sister</h3>
+        <small>Lucas V.</small>
+        <div class="meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Serviço presencial</span>
+        </div>
+        <div class="progress"><span style="width: 10%"></span></div>
+        <div class="card-footer">
+          <small>1 / 10</small>
+          <button class="unlock-btn">ver mais</button>
+        </div>
+      </div>
   
   
   
@@ -169,7 +165,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/></svg>
         <span>Pedidos</span>
       </a>
-      <a href="aceitos.html">
+      <a href="aceitos.html" class="active">
         <!-- ícone aceitos-->
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         <span>Aceitos</span>
@@ -187,7 +183,6 @@
     </nav>
   </footer>
 
-  <!-- JS corretamente incluído aqui -->
-  <script src="lojaPedidos.js"></script>
+  <link rel="stylesheet" href="lojaPedidos.js">
 </body>
 </html>
