@@ -43,6 +43,7 @@ function filtrarUrgentes() {
   });
 //
 
+//    BOTAO DO FOOTER
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('footer nav a');
 

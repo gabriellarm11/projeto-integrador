@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #FFE6EC;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background: #FFE6EC;
+    background: white;
     padding: 60px 60px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px 4px;
