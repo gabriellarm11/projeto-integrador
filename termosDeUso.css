@@ -18,7 +18,7 @@
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 30px; /* ADICIONADO: espaçamento interno */
+    padding: 30px; 
   }
   
   h1 {
@@ -47,7 +47,7 @@
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    /* float: right; */
+    
   }
   
   .voltar:hover {
